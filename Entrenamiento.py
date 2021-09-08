@@ -1,8 +1,8 @@
 from Datos_Entrenamiento import *
-flag=0
+Generacion=0
 brk=1
 while brk:
-    flag+=1
+    Generacion+=1
     for Letra in range(len(Letras)):  #Cada iteracion cambia las entradas de las letras
     #for it in range(iteraciones): len(Letras)
         y1=0  #Declaracion de Sinapsis Neurona1

@@ -4,6 +4,7 @@ for i in range(len(Letra)):
         for j in range(len(Letra[i])):
             print("Introduzca el valor de la casilla ",i+1,j+1)
             Letra[i][j]=input()
+            
 for k in range(4):
     y1=0  #Declaracion de Sinapsis Neurona1
     y2=0  #Declaracion de Sinapsis Neurona2
