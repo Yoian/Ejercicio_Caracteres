@@ -1,9 +1,9 @@
 from DatosPruebaA import *
-# Letra=B
-for i in range(len(Letra)):
-        for j in range(len(Letra[i])):
-            print("Introduzca el valor de la casilla ",i+1,j+1)
-            Letra[i][j]=input()
+Letra=A
+# for i in range(len(Letra)):
+#         for j in range(len(Letra[i])):
+#             print("Introduzca el valor de la casilla ",i+1,j+1)
+#                 Letra[i][j]=input()
             
 for k in range(4):
     y1=0  #Declaracion de Sinapsis Neurona1
@@ -15,7 +15,7 @@ for k in range(4):
         for j in range(len(Letra[i])):
             y1+=WN1[k][i][j]*Letra[i][j]  #Sinapsis Neurona1
             y2+=WN2[k][i][j]*Letra[i][j]  #Sinapsis Neurona2
-            y3+=WN3[k][i][j]*[i][j]  #Sinapsis Neurona3
+            y3+=WN3[k][i][j]*Letra[i][j]  #Sinapsis Neurona3
             y4+=WN4[k][i][j]*Letra[i][j]  #Sinapsis Neurona4
             
     ys1=1/(1+e**(-y1))  #Salida de Función de activación Neurona1

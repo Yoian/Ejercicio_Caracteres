@@ -43,7 +43,7 @@ while brk:
         cde[Letra]=(((Tk1[Letra]-ysf)**2)/2)  #Se calcula el error con la función de coste 
         
     for i in range(len(Letras)):
-        if cde[i]<0.00005:  #condición para comprobar el error de cada letra
+        if cde[i]<0.005:  #condición para comprobar el error de cada letra
             brk=0
         else:
             brk=1
